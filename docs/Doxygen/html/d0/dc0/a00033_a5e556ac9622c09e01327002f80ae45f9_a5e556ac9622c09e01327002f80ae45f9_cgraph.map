@@ -1,0 +1,4 @@
+<map id="util.console.Input.readPassword" name="util.console.Input.readPassword">
+<area shape="rect" id="node1" title="After printing the message: &quot;password: &quot;." alt="" coords="5,5,212,32"/>
+<area shape="rect" id="node2" href="$d0/dc0/a00033_a7b3ceb62bd787571d5be406ef5e94890.html#a7b3ceb62bd787571d5be406ef5e94890" title="After printing a message, fetch from console or System.in, if there shouldn&#39;t be a console connected,..." alt="" coords="260,5,433,32"/>
+</map>

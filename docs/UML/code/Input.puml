@@ -1,0 +1,7 @@
+@startuml
+class util.console.Input {
+- <<Create>> Input()
++ {static} String readLine(String,Object)
++ {static} String readPassword()
+}
+@enduml

@@ -1,0 +1,27 @@
+@startuml inline_umlgraph_1.svg
+class util.console.Console {
+- <<Create>> Console()
++ {static} void clrscr()
+}
+@enduml
+@startuml inline_umlgraph_2.svg
+- <<Create>> Input()
++ {static} String readLine(String,Object)
++ {static} String readPassword()
+}
+@enduml
+@startuml inline_umlgraph_3.svg
+class util.console.Output {
+- <<Create>> Output()
++ {static} void printLine(String,Object)
++ {static} void printnlLine(String,Object)
++ {static} void printNotValid()
++ {static} void printIsPresent(String)
+}
+@enduml
+@startuml inline_umlgraph_4.svg
+class util.console.Console {
+- <<Create>> Console()
++ {static} void clrscr()
+}
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class util.console.Output {
+- <<Create>> Output()
++ {static} void printLine(String,Object)
++ {static} void printnlLine(String,Object)
++ {static} void printNotValid()
++ {static} void printIsPresent(String)
+}
+@enduml
