@@ -8,6 +8,6 @@ public class TestConsole {
 
   @Test
   public void myTab() {
-    assertEquals("    ", Console.myTab());
+    assertEquals("    ", Console.getMyTab());
   }
 }

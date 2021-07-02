@@ -1,4 +1,4 @@
-package org.chalohel.database;
+package chalohel.database;
 
 import java.util.Properties;
 
