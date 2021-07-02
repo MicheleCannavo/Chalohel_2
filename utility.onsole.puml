@@ -1,0 +1,86 @@
+@startuml
+class chalohel.utility.validator.ValidateName {
+- {static} Logger LOGGER
+- {static} ValidateName instance
+- <<Create>> ValidateName()
++ {static} ValidateName getInstance()
+}
+class chalohel.utility.validator.ValidateEmail {
+- {static} Logger LOGGER
+- {static} ValidateEmail instance
+- <<Create>> ValidateEmail()
++ {static} ValidateEmail getInstance()
+}
+class chalohel.utility.console.Input {
+- {static} Logger LOGGER
+- <<Create>> Input()
++ {static} String readLine(String,Object)
++ {static} String readPassword()
+}
+class chalohel.utility.console.Console {
+- {static} Logger LOGGER
+- <<Create>> Console()
++ {static} void clrscr()
++ {static} String getMyTab()
+}
+class chalohel.utility.validator.ValidateNameProject {
+- {static} Logger LOGGER
+- {static} ValidateNameProject instance
+- <<Create>> ValidateNameProject()
++ {static} ValidateNameProject getInstance()
+}
+abstract class chalohel.utility.validator.AbstractValidator {
+- {static} Logger LOGGER
+- String pattern
+- String nameValidator
+- String validationRules
++ void setNameValidator(String)
++ String getValidationRules()
++ void setValidationRules(String)
++ String getPattern()
++ void setPattern(String)
++ String getValidatorName()
++ String getRulesOfValidation()
++ boolean isValid(String)
++ String request()
+}
+class chalohel.utility.validator.ValidateGeneric {
+- {static} Logger LOGGER
++ <<Create>> ValidateGeneric(String,String)
+}
+class chalohel.utility.validator.ValidatePassword {
+- {static} Logger LOGGER
+- {static} ValidatePassword instance
+- <<Create>> ValidatePassword()
++ {static} ValidatePassword getInstance()
+}
+class chalohel.utility.validator.ValidateVersion {
+- {static} Logger LOGGER
+- {static} ValidateVersion instance
+- <<Create>> ValidateVersion()
++ {static} ValidateVersion getInstance()
+}
+class chalohel.utility.validator.ValidateNumber {
+- {static} Logger LOGGER
+- {static} ValidateNumber instance
+- <<Create>> ValidateNumber()
++ {static} ValidateNumber getInstance()
+}
+class chalohel.utility.console.Output {
+- {static} Logger LOGGER
+- <<Create>> Output()
++ {static} void printLine(String,Object)
++ {static} void printnlLine(String,Object)
++ {static} void printNotValid()
++ {static} void printIsPresent(String)
+}
+
+
+chalohel.utility.validator.AbstractValidator <|-- chalohel.utility.validator.ValidateName
+chalohel.utility.validator.AbstractValidator <|-- chalohel.utility.validator.ValidateEmail
+chalohel.utility.validator.AbstractValidator <|-- chalohel.utility.validator.ValidateNameProject
+chalohel.utility.validator.AbstractValidator <|-- chalohel.utility.validator.ValidateGeneric
+chalohel.utility.validator.AbstractValidator <|-- chalohel.utility.validator.ValidatePassword
+chalohel.utility.validator.AbstractValidator <|-- chalohel.utility.validator.ValidateVersion
+chalohel.utility.validator.AbstractValidator <|-- chalohel.utility.validator.ValidateNumber
+@enduml
